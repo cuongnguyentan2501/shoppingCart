@@ -31,10 +31,10 @@ function Cart ({cart}){
                     <tbody id="my-cart-body">
                       {
                         cart.shoppingCart.map((item,index)=>(
-                          <CartItem key={index} index={index} item={item}/>
+                          <CartItem key={Math.random()} index={index} item={item}/>
                           ))
                       }
-                       <CartEmpty/>
+                      {!cart.shoppingCart.length?<CartEmpty/>:""}
                     </tbody>
                    
                     <CartTotal countTotal={handleCountTotal()}/>

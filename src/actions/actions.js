@@ -17,3 +17,16 @@ export const deleteFromCart=(item)=>{
         }
     }
 }
+export const updateFromCart=(id,countProduct)=>{
+    return {
+        type:actionTypes.UPDATE_FROM_CART,
+        payload:{
+            id,countProduct
+        }
+    }
+}
+export const toggleIsLoading=()=>{
+    return {
+        type:actionTypes.TOGGLE_IS_LOADING,
+    }
+}

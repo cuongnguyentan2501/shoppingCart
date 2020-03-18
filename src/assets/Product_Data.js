@@ -2,10 +2,10 @@ import { v4 as uuidv4 } from 'uuid';
 export const ProductData=[
     {
         id:uuidv4(),
-        title:"Bạch tuộc",
+        title:"Bạch tuộc xanh",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quas, magnam perferendis",
         price:12,
-        img:"./disc/images/robo.jpg",
+        img:"./disc/images/aplusau.jpg",
     },
     {
         id:uuidv4(),

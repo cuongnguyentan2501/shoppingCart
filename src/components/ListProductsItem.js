@@ -29,6 +29,7 @@ function ListProductsItem({item,dispatch}){
                     className="price"
                     onClick={(e)=>{
                         e.preventDefault();
+                        setCountProduct(1);
                         dispatch(actions.addToCart(item,parseInt(countProduct)))}}
                 >{item.price} USD</a>
             </div>

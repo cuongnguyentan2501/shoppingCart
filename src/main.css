@@ -1,3 +1,20 @@
+.central{
+	z-index: 9;
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+	bottom: 0;
+	background-color: #afafaf4d;
+}
+.central svg{
+	background-color: transparent !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	
+}
 h1.page-title {
 	margin-bottom: 20px;
 }
