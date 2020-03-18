@@ -18,7 +18,7 @@ function Cart ({cart}){
     }
     return countTotal;
   }
-  console.log("cart render",cart.shoppingCart,"Độ dai ",cart.shoppingCart.length);
+  
   
     return (
         <div className="col-xs-12 col-sm-12 col-md-7 col-lg-7">

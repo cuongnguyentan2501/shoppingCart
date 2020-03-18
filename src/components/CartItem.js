@@ -15,7 +15,7 @@ function CartItem(props){
     }
      useEffect(function(){
         setCountProduct(props.item.productCounter);
-     },[]
+     },[props.item.productCounter]
      )
     const handleUpdateItem=()=>{
         props.dispatch(actions.toggleIsLoading());
@@ -23,6 +23,7 @@ function CartItem(props){
             props.dispatch(actions.updateFromCart(props.item.id,countProduct));
         }, 1000);
     }
+   
     return (
         <tr>
             <th scope="row">{props.index+1}</th>
